@@ -14,6 +14,7 @@ Aws.config.update(endpoint: localstack, credentials: Aws::Credentials.new('sofak
 puts "Aws.config=#{Aws.config.inspect}"
 
 puts "sleeping 5s"
+
 STDOUT.flush
 sleep(5)
 
