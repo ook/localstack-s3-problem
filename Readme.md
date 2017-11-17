@@ -41,3 +41,4 @@ Tested
 * localstack on the same container that the script: ❌ same results
 * adding BUCKET.localstack in /etc/hosts: ❌ same results
 * upgrade to ruby 2.4.2: ❌ same results
+* downgrade to aws-sdk 2: ❌ same results
