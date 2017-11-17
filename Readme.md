@@ -1,7 +1,7 @@
 Purpose
 ----
 
-Sample project showing the aws-sdk S3 error `/usr/local/lib/ruby/2.2.0/net/http.rb:879:in `initialize': unable to connect to `mybucket.localstack`; SocketError: getaddrinfo: Name or service not known (Seahorse::Client::NetworkingError)` raised by Aws Seahorse.
+Sample project showing the aws-sdk S3 error `/usr/local/lib/ruby/2.2.0/net/http.rb:879:in \`initialize': unable to connect to \`mybucket.localstack\`; SocketError: getaddrinfo: Name or service not known (Seahorse::Client::NetworkingError)` raised by Aws Seahorse.
 
 Containers
 -------
