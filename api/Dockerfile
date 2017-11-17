@@ -1,4 +1,4 @@
-FROM ruby:2.2.5
+FROM ruby:2.4.2
 
 COPY Gemfile* /tmp/
 
