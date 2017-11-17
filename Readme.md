@@ -20,6 +20,20 @@ I want to use `aws-sdk` with [localstack](https://github.com/localstack/localsta
 We can see that api container can reach without a problem the localstack container via the configured link.
 
 For unknown reason, the `aws-sdk-s3` try to reach `BUCKET.localstack` and fail.
+On the same container, `awscli` works perfectly:
+
+```
+root@35afc611394b:/app/user# aws configure
+AWS Access Key ID [None]: sofake
+AWS Secret Access Key [None]: solie
+Default region name [None]: eu-west-1
+Default output format [None]:
+
+root@35afc611394b:/app/user# aws --endpoint-url=http://localstack:4572 s3 mb s3://test1
+make_bucket: test1
+root@35afc611394b:/app/user# aws --endpoint-url=http://localstack:4572 s3 ls
+2006-02-03 16:45:09 test1
+```
 
 Tested
 -----

@@ -18,5 +18,11 @@ puts "sleeping 5s"
 STDOUT.flush
 sleep(5)
 
+begin 
 puts "Aws::S3::Resource.new.bucket('mybucket').exists?"
 puts Aws::S3::Resource.new.bucket('mybucket').exists?.inspect
+rescue
+  puts "Sleeping for some years, letting you hop into the container…"
+  STDOUT.flush
+  sleep(99999999)
+end
